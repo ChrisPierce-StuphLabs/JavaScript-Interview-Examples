@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+	document.write("5 + 4 = ", 5 + 4, "<br />");
+	document.write("5 - 4 = ", 5 - 4, "<br />");
+	document.write("5 * 4 = ", 5 * 4, "<br />");
+	document.write("5 / 4 = ", 5 / 4, "<br />");
+	document.write("5 % 4 = ", 5 % 4, "<br />");
+
+
+	document.write("Max Num = ", Number.MAX_VALUE, "<br />");
+    document.write("Min Num = ", Number.MIN_VALUE, "<br />");
+
+    //JS only supports 16 chars of precision
+    precisionTest = 0.10000000000000000000000000001;
+    document.write(precisionTest, " <br />");
+
+    var balance = 132817;
+    //toFixed specifies the number of digits of precision. In this case, 2
+    document.write("Monthly payment: ", (balance / 12).toFixed(2) , "<br />");
+
+
+    var randNum = 5;
+    document.write("randNum++ = ", randNum++, "<br />");
+	document.write("randNum-- = ", randNum--, "<br />");
+	document.write("++randNum = ", ++randNum, "<br />");
+	document.write("--randNum = ", --randNum, "<br />");
+
+
+	//showing the differences in the order of opperations
+	document.write("3 + 2 * 5 = ", 3 + 2 * 5, "<br />");
+	document.write("(3 + 2) * 5 = ", (3 + 2) * 5, "<br />");
+
+
+	//showing basic math opperations in JS
+	document.write("Math.abs(-8) ", Math.abs(-8), "<br />");
+	document.write("Math.cbrt(1000) = ", Math.cbrt(1000), "<br />");
+	document.write("Math.ceil(6.45) = ", Math.ceil(6.45), "<br />");
+	document.write("Math.floor(6.45) = ", Math.floor(6.45), "<br />");
+	document.write("Math.round(6.45) = ", Math.round(6.45), "<br />");
+	
+	//natural log e
+	document.write("Math.log(10) = ", Math.log(10), "<br />");
+	document.write("Math.log10(10) = ", Math.log10(10), "<br />");
+	document.write("Math.max(10,5) = ", Math.max(10,5), "<br />");
+	document.write("Math.min(10,5) = ", Math.min(10,5), "<br />");
+	document.write("Math.pow(4,2) = ", Math.pow(4,2), "<br />");
+	document.write("Math.sqrt(1000) = ", Math.sqrt(1000), "<br />");
+	
+
+
+	document.write("Random # (1-10) = ", Math.floor((Math.random() * 10 ) +1), " <br />");
+
+
+	document.write("Converting a String to a Number: ", Number("3.14159"), "<br />");
+	document.write("Converted Int: ", parseInt("5"), "<br />");
+	document.write("Converting Float: ", parseFloat("3.14159"), "<br />");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+
+	var tomSmith = ["Tom Smith ", " 123 main ", 120.50]
+	document.write("1st Index: ", tomSmith[0], "<br />");
+
+	//setting index 3
+	tomSmith[3] = "tsmith@aol.com";
+
+	//use splice() to add stuff to index 2 without overwriting(startAt, howManyThingsToOverride)
+	tomSmith.splice(2, 1, "PittsBurgh ", "PA");
+
+	//what index to delete, how many to delete
+	tomSmith.splice(4,1);
+
+	//one way to convert to a string
+	document.write("Array : ", tomSmith.valueOf(), "<br />");
+	document.write("Array : ", tomSmith.join(", "), "<br />");
+
+	delete tomSmith[3];
+	tomSmith.sort();
+
+
+	var numbers = [3, 7, 9, 1, 2, 8];
+
+	//sort numbers in Ascending order
+	numbers.sort(function(x,y) { return x - y});
+	document.write("Num Array Sorted Ascending: ", numbers.toString(), "<br />")
+
+
+	//sort numbers in Decending order
+	numbers.sort(function(x,y) { return y - x});
+	document.write("Num Array Sorted Decending: ", numbers.toString(), "<br />")
+
+
+	var combinedArray = numbers.concat(tomSmith);
+	document.write("the Combined Array is: " + combinedArray + "<br />");
+
+	//remove the last element in the array.
+	tomSmith.pop();
+
+	//adding things to the array at the end
+	tomSmith.push("555-1234", "USA");
+
+	//delete the first element in array
+	tomSmith.shift();
+
+	//add items to the first element in array
+	tomSmith.unshif("Tom Smith");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div align="center">
+<script type="text/javascript">
+	
+	//here is a while loop that outputs 0-10
+	var i = 0;
+	while(i <= 10){
+		document.write(i + "<br />");
+		i++;
+	}
+
+	document.write("<br />");
+
+	//use do while when you need to use it at least once. guess until you hit 15
+	do{
+		var guess = prompt("Guess a number between 1 and 20");
+	}while(guess != 15)
+	alert("You guessed 15!", "<br />", "<br />");
+
+	document.write("<br />");
+
+
+	//for loop that outputs odd numbers using Modulo
+	for(j=0; j <= 20; j++){
+		if((j % 2) === 0){
+			//fall out of the loop, increment j, and continue with the loop
+			continue;
+		}
+
+		if(j === 15){
+			break;
+		}
+		document.write(j + "<br />");
+	}
+
+	document.write("<br />");
+
+
+	//associative array to use on the foreach loop
+	var customer ={name : "bill mackey", address : "125 orange street", balance : 50.50};
+
+	//foreach loop
+	for(k in customer){
+		document.write(customer[k] + "<br />")
+	}
+
+
+
+
+
+</script>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	//Relational Operators:  == === != > < >= <= 
+	//Logical Operators: 	 && || !
+
+
+
+	//if conditionals example
+	var age = 8;
+	if ((age >= 5) && (age <= 6)) {
+		document.write("Go to Kindergarten " + "<br />");
+	} else if( age > 18){
+		document.write("Go to Colege " + "<br />");
+	} else{
+		document.write("Go to Grade ", age - 5, "<br />")
+	}
+
+	document.write("true || false ", true || false, "<br />");
+	document.write("!true ", !true, " <br />");
+
+	//diff between a string and a number, and == with ===
+	document.write("\"5\" == 5 = ", ("5" == 5), "<br />");
+	document.write("\"5\" === 5 = ", ("5" === 5), "<br />");
+
+
+	//switch statements
+	switch(age) {
+		case 5 :
+		case 6 :
+		document.write("Go to Kindergarten " + "<br />");
+		break;
+
+		case 7 :
+		document.write("Go to " + "<br />");
+		break;
+	default :
+		document.write("Subtract 5 from your age" + "<br />")
+	}
+
+
+	//ternary operator
+	//(condition) ? ifTrue : ifFalse
+	var canIVote = (age >= 18) ? true : false;
+	document.write("lets see if you are old enough to vote: " + canIVote + "<br />");
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

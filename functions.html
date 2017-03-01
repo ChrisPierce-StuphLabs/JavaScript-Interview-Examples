@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+	var arrayToCheck = [9, 8, 7, 6, 5];
+
+
+	function inArray(arrayToCheck, value){		
+		for(i=0; i < arrayToCheck.length; i++){
+			if(arrayToCheck[i] === value){
+				return true;
+			}
+
+		}
+
+		//checked everything, return false
+		return false;
+	}	
+	
+
+	
+
+	document.write()
+
+	//returns false
+	document.write("In Array : ", inArray(arrayToCheck, 1), "<br />");
+
+	//returns true
+	document.write("In Array : ", inArray(arrayToCheck, 9), "<br />");
+
+
+</script>
+
+</body>
+</html>

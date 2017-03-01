@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+
+	var randStr = "A long string" + " was typed " + "It goes on and on." + " <br />";
+
+
+	document.write("String Length ", randStr.length + "<br />");	
+	document.write("Index for \"goes\" : ", randStr.indexOf("goes") + "<br />");
+
+
+	//start at 2nd and go to the 9th
+	document.write(randStr.slice(2,9) + "<br />");
+
+	//get the 9th character until the end.
+	document.write(randStr.slice(9) + "<br />");
+
+
+	//using other ways
+	document.write(randStr.replace("and on", "forever") + "<br />");
+	document.write("At Index 2 : ", randStr.charAt(2) + "<br />");
+
+	var randStrArray = randStr.split(" ");
+	randStr = randStr.trim();
+
+	document.write(randStr.toUpperCase() + "<br />");
+	document.write(randStr.toLowerCase() + "<br />");
+
+
+
+
+</script>
+
+
+</body>
+</html>
