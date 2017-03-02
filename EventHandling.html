@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function openAlert(mess){
+		alert(mess);
+	}
+
+</script>
+
+	<!-- the void(0) is what keeps it from reloading the page -->
+	<a href="JavaScript:void(0)" onClick="alert('Hello');"> Say Hello </a><br />
+
+	<a href="JavaScript:void(0)" onClick="alert('Greetings Earthlings.');"> Say Something </a><br />
+
+
+	<a href="JavaScript:void(0)" 
+	onmouseover="this.style.color='red';"
+	onmouseout="this.style.color='blue'"
+	ondblclick="this.text='You double clicked me'"
+	onmousedown="this.text='Don\'t Press too hard, please'"
+	onmouseup="this.text='Thank you'"> Make me red </a><br />
+
+
+	<input type="text" id="randInput"
+	onChange="var dataEntered=document.getElementById('randInput').value;
+	alert('User Typed ' + dataEntered)";
+
+
+
+	<form action="#" id="sampleForm">
+		<input type="text" id="charInput">
+
+		<p id="keyData"> Key Data Here </p>
+		<input type="submit" value="Submit">
+		<input type="reset" value="Reset">
+
+	</form><br />
+
+	<img src="logo.png" id="logo">
+
+	<button id="logoButton"> Get Logo </button>
+
+	<input id='mouseInput' type='text' size="30"><br />
+
+	Mouse X: <input type="text" id="mouseX"><br />
+	Mouse Y: <input type="text" id="mouseY"><br />
+
+
+	<!-- if we have a problem, (cant output char code) return null -->
+	<!--FOR IE  return String.fromCharacterCode(event.keyCode);-->
+	<!-- FOR EVERYTHING ELSE return String.fromCharacterCode(event.which) -->
+
+	<script>
+	function getChar(event){
+		if(event.which == null){
+			return String.fromCharacterCode(event.keyCode);
+			} else if (event.which != 0 && event.charCode != 0){
+				return String.fromCharacterCode(event.which)
+			} else {
+				return null;
+			}
+	}
+
+	document.getElementById('charInput').onkeypress = function(event){
+		var char = getChar(event || window.event)
+		if(!char) return false;
+
+		document.getElementById('keyData').innerHTML = char + " was clicked ";
+		return true;
+	}
+
+	</script>
+
+
+
+
+
+</body>
+</html>
