@@ -73,6 +73,35 @@
 		return true;
 	}
 
+
+	//change text when input gains focus
+	document.getElementById('charInput').onfocus = function(event){
+		document.getElementById('keyData').innerHTML = "Input gained focus.";
+	}
+
+
+	//change text when input gains focus
+	document.getElementById('charInput').onclick = function(event){
+		document.getElementById('keyData').innerHTML = "TextSelected.";
+	}
+
+
+	document.getElementById('logoButton').onclick = function(event){
+		document.getElementById('logo').className = "show";
+	}
+
+
+
+		document.getElementById('logoButton').onClick = function(event){
+		document.getElementById('logo').src = "ntt-logo-horz.png";
+
+
+		document.getElementById('logo').onmouseover = function(event){
+		document.getElementById('logo').src = "ntt-logo-horz.png";
+		document.getElementById('mouseInput').value = "Mouse Over Image";
+	}
+
+
 	</script>
 
 
